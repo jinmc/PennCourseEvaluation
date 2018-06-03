@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PennCoursesModelStoreContainer" CdmEntityContainer="PennCoursesEntities1">
+    <EntitySetMapping Name="course_evals">
+      <EntityTypeMapping TypeName="PennCoursesModel.course_evals">
+        <MappingFragment StoreEntitySet="course_evals">
+          <ScalarProperty Name="Idx" ColumnName="Idx" />
+          <ScalarProperty Name="CourseName" ColumnName="CourseName" />
+          <ScalarProperty Name="InstructorName" ColumnName="InstructorName" />
+          <ScalarProperty Name="StudentNumber" ColumnName="StudentNumber" />
+          <ScalarProperty Name="CourseQuality" ColumnName="CourseQuality" />
+          <ScalarProperty Name="InstructorQuality" ColumnName="InstructorQuality" />
+          <ScalarProperty Name="Difficulty" ColumnName="Difficulty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PennCoursesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="course_evals">
+    <Key>
+      <PropertyRef Name="Idx" />
+    </Key>
+    <Property Name="Idx" Type="Int32" Nullable="false" />
+    <Property Name="CourseName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="InstructorName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StudentNumber" Type="Int32" Nullable="false" />
+    <Property Name="CourseQuality" Type="Double" Nullable="false" />
+    <Property Name="InstructorQuality" Type="Double" Nullable="false" />
+    <Property Name="Difficulty" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PennCoursesEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="course_evals" EntityType="Self.course_evals" />
+  </EntityContainer>
+</Schema>
